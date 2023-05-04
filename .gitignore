@@ -1,0 +1,7 @@
+/var
+/opt
+/venv
+/share
+/user_cache
+/environments/*/.spack-env
+/sources

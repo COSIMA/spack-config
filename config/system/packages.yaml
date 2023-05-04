@@ -1,0 +1,417 @@
+packages:
+  all:
+    compiler:
+    - intel@2021.6.0
+    - intel
+    - oneapi
+    - gcc
+    providers:
+      mpi:
+      - openmpi@4.1.2
+      - openmpi
+      - intelmpi
+  pkgconf:
+    externals:
+    - spec: pkgconf@1.4.2
+      prefix: /usr
+  gawk:
+    externals:
+    - spec: gawk@4.2.1
+      prefix: /usr
+  binutils:
+    externals:
+    - spec: binutils@2.30.113
+      prefix: /usr
+  gmake:
+    externals:
+    - spec: gmake@4.2.1
+      prefix: /usr
+  openssl:
+    externals:
+    - spec: openssl@1.1.1k
+      prefix: /usr
+    buildable: false
+  m4:
+    externals:
+    - spec: m4@1.4.18
+      prefix: /usr
+    buildable: false
+  autoconf:
+    externals:
+    - spec: autoconf@2.69
+      prefix: /usr
+    buildable: false
+  libtool:
+    externals:
+    - spec: libtool@2.4.6
+      prefix: /usr
+    buildable: false
+  openssh:
+    externals:
+    - spec: openssh@8.0p1
+      prefix: /usr
+    buildable: false
+  diffutils:
+    externals:
+    - spec: diffutils@3.6
+      prefix: /usr
+    buildable: false
+  git:
+    externals:
+    - spec: git@2.24.1
+      prefix: /apps/git/2.24.1
+      modules:
+      - git/2.24.1
+    - spec: git@2.37.3
+      prefix: /apps/git/2.37.3
+      modules:
+      - git/2.37.3
+    buildable: true
+  findutils:
+    externals:
+    - spec: findutils@4.6.0
+      prefix: /usr
+    buildable: false
+  cmake:
+    externals:
+    - spec: cmake@3.16.2
+      prefix: /apps/cmake/3.16.2
+      modules:
+      - cmake/3.16.2
+    - spec: cmake@3.18.2
+      prefix: /apps/cmake/3.18.2
+      modules:
+      - cmake/3.18.2
+    - spec: cmake@3.21.4
+      prefix: /apps/cmake/3.21.4
+      modules:
+      - cmake/3.21.4
+    - spec: cmake@3.24.2
+      prefix: /apps/cmake/3.24.2
+      modules:
+      - cmake/3.24.2
+    buildable: true
+  groff:
+    externals:
+    - spec: groff@1.22.3
+      prefix: /usr
+  bison:
+    externals:
+    - spec: bison@3.0.4
+      prefix: /usr
+    buildable: false
+  cvs:
+    externals:
+    - spec: cvs@1.11.23
+      prefix: /usr
+  texinfo:
+    externals:
+    - spec: texinfo@6.5
+      prefix: /usr
+  tar:
+    externals:
+    - spec: tar@1.30
+      prefix: /usr
+  subversion:
+    externals:
+    - spec: subversion@1.10.2
+      prefix: /usr
+  flex:
+    externals:
+    - spec: flex@2.6.1+lex
+      prefix: /usr
+  automake:
+    externals:
+    - spec: automake@1.16.1
+      prefix: /usr
+  ninja:
+    externals:
+    - spec: ninja@1.8.2
+      prefix: /usr
+  libxml2:
+    externals:
+    - spec: libxml2@2.9.7
+      prefix: /usr
+    buildable: false
+  python:
+    externals:
+    - spec: python@3.7.4+bz2+ctypes+dbm+lzma+nis+pyexpat~pythoncmd+readline+sqlite3+ssl+tix+tkinter+uuid+zlib
+      prefix: /apps/python3/3.7.4
+      modules:
+      - python3/3.7.4
+    - spec: python@3.8.5+bz2+ctypes+dbm+lzma+nis+pyexpat~pythoncmd+readline+sqlite3+ssl+tix+tkinter+uuid+zlib
+      prefix: /apps/python3/3.8.5
+      modules:
+      - python3/3.8.5
+    - spec: python@3.9.2+bz2+ctypes+dbm+lzma+nis+pyexpat~pythoncmd+readline+sqlite3+ssl+tix+tkinter+uuid+zlib
+      prefix: /apps/python3/3.9.2
+      modules:
+      - python3/3.9.2
+    - spec: python@3.10.0+bz2+ctypes+dbm+lzma+nis+pyexpat~pythoncmd+readline+sqlite3+ssl+tix+tkinter+uuid+zlib
+      prefix: /apps/python3/3.10.0
+      modules:
+      - python3/3.10.0
+    - spec: python@3.10.4+bz2+ctypes+dbm+lzma+nis+pyexpat~pythoncmd+readline+sqlite3+ssl+tix+tkinter+uuid+zlib
+      prefix: /apps/python3/3.10.4
+      modules:
+      - python3/3.10.4
+    - spec: python@3.11.0+bz2+ctypes+dbm+lzma+nis+pyexpat~pythoncmd+readline+sqlite3+ssl+tix+tkinter+uuid+zlib
+      prefix: /apps/python3/3.11.0
+      modules:
+      - python3/3.11.0
+    buildable: false
+  perl:
+    externals:
+    - spec: perl@5.26.3~cpanm+shared+threads
+      prefix: /usr
+    buildable: false
+  openmpi:
+    externals:
+    - spec: openmpi@2.1.6
+      prefix: /apps/openmpi/2.1.6
+      modules:
+      - openmpi/2.1.6
+    - spec: openmpi@2.1.6-debug
+      prefix: /apps/openmpi/2.1.6-debug
+      modules:
+      - openmpi/2.1.6-debug
+    - spec: openmpi@2.1.6-mt
+      prefix: /apps/openmpi/2.1.6-mt
+      modules:
+      - openmpi/2.1.6-mt
+    - spec: openmpi@2.1.6-mt-debug
+      prefix: /apps/openmpi/2.1.6-mt-debug
+      modules:
+      - openmpi/2.1.6-mt-debug
+    - spec: openmpi@3.0.4
+      prefix: /apps/openmpi/3.0.4
+      modules:
+      - openmpi/3.0.4
+    - spec: openmpi@3.0.4-debug
+      prefix: /apps/openmpi/3.0.4-debug
+      modules:
+      - openmpi/3.0.4-debug
+    - spec: openmpi@3.1.4
+      prefix: /apps/openmpi/3.1.4
+      modules:
+      - openmpi/3.1.4
+    - spec: openmpi@3.1.4-debug
+      prefix: /apps/openmpi/3.1.4-debug
+      modules:
+      - openmpi/3.1.4-debug
+    - spec: openmpi@4.0.1
+      prefix: /apps/openmpi/4.0.1
+      modules:
+      - openmpi/4.0.1
+    - spec: openmpi@4.0.1-debug
+      prefix: /apps/openmpi/4.0.1-debug
+      modules:
+      - openmpi/4.0.1-debug
+    - spec: openmpi@4.0.2
+      prefix: /apps/openmpi/4.0.2
+      modules:
+      - openmpi/4.0.2
+    - spec: openmpi@4.0.2-debug
+      prefix: /apps/openmpi/4.0.2-debug
+      modules:
+      - openmpi/4.0.2-debug
+    - spec: openmpi@4.0.3
+      prefix: /apps/openmpi/4.0.3
+      modules:
+      - openmpi/4.0.3
+    - spec: openmpi@4.0.3-debug
+      prefix: /apps/openmpi/4.0.3-debug
+      modules:
+      - openmpi/4.0.3-debug
+    - spec: openmpi@4.0.4
+      prefix: /apps/openmpi/4.0.4
+      modules:
+      - openmpi/4.0.4
+    - spec: openmpi@4.0.4-debug
+      prefix: /apps/openmpi/4.0.4-debug
+      modules:
+      - openmpi/4.0.4-debug
+    - spec: openmpi@4.0.5
+      prefix: /apps/openmpi/4.0.5
+      modules:
+      - openmpi/4.0.5
+    - spec: openmpi@4.0.5-debug
+      prefix: /apps/openmpi/4.0.5-debug
+      modules:
+      - openmpi/4.0.5-debug
+    - spec: openmpi@4.0.6
+      prefix: /apps/openmpi/4.0.6
+      modules:
+      - openmpi/4.0.6
+    - spec: openmpi@4.0.6-debug
+      prefix: /apps/openmpi/4.0.6-debug
+      modules:
+      - openmpi/4.0.6-debug
+    - spec: openmpi@4.0.7
+      prefix: /apps/openmpi/4.0.7
+      modules:
+      - openmpi/4.0.7
+    - spec: openmpi@4.0.7-debug
+      prefix: /apps/openmpi/4.0.7-debug
+      modules:
+      - openmpi/4.0.7-debug
+    - spec: openmpi@4.1.0
+      prefix: /apps/openmpi/4.1.0
+      modules:
+      - openmpi/4.1.0
+    - spec: openmpi@4.1.0-debug
+      prefix: /apps/openmpi/4.1.0-debug
+      modules:
+      - openmpi/4.1.0-debug
+    - spec: openmpi@4.1.1
+      prefix: /apps/openmpi/4.1.1
+      modules:
+      - openmpi/4.1.1
+    - spec: openmpi@4.1.1-debug
+      prefix: /apps/openmpi/4.1.1-debug
+      modules:
+      - openmpi/4.1.1-debug
+    - spec: openmpi@4.1.2
+      prefix: /apps/openmpi/4.1.2
+      modules:
+      - openmpi/4.1.2
+    - spec: openmpi@4.1.2-debug
+      prefix: /apps/openmpi/4.1.2-debug
+      modules:
+      - openmpi/4.1.2-debug
+    - spec: openmpi@4.1.3
+      prefix: /apps/openmpi/4.1.3
+      modules:
+      - openmpi/4.1.3
+    - spec: openmpi@4.1.3-debug
+      prefix: /apps/openmpi/4.1.3-debug
+      modules:
+      - openmpi/4.1.3-debug
+    - spec: openmpi@4.1.4
+      prefix: /apps/openmpi/4.1.4
+      modules:
+      - openmpi/4.1.4
+    - spec: openmpi@4.1.4-debug
+      prefix: /apps/openmpi/4.1.4-debug
+      modules:
+      - openmpi/4.1.4-debug
+    buildable: true
+  mpi:
+    buildable: false
+  intel-mpi:
+    externals:
+    - spec: intel-mpi@2019.3.199
+      prefix: /apps/intel-mpi/2019.3.199
+      modules:
+      - intel-mpi/2019.3.199
+    - spec: intel-mpi@2019.4.243
+      prefix: /apps/intel-mpi/2019.4.243
+      modules:
+      - intel-mpi/2019.4.243
+    - spec: intel-mpi@2019.5.281
+      prefix: /apps/intel-mpi/2019.5.281
+      modules:
+      - intel-mpi/2019.5.281
+    - spec: intel-mpi@2019.6.166
+      prefix: /apps/intel-mpi/2019.6.166
+      modules:
+      - intel-mpi/2019.6.166
+    - spec: intel-mpi@2019.7.217
+      prefix: /apps/intel-mpi/2019.7.217
+      modules:
+      - intel-mpi/2019.7.217
+    - spec: intel-mpi@2019.8.254
+      prefix: /apps/intel-mpi/2019.8.254
+      modules:
+      - intel-mpi/2019.8.254
+    - spec: intel-mpi@2019.9.304
+      prefix: /apps/intel-mpi/2019.9.304
+      modules:
+      - intel-mpi/2019.9.304
+    - spec: intel-mpi@2021.1.1
+      prefix: /apps/intel-mpi/2021.1.1
+      modules:
+      - intel-mpi/2021.1.1
+    - spec: intel-mpi@2021.2.0
+      prefix: /apps/intel-mpi/2021.2.0
+      modules:
+      - intel-mpi/2021.2.0
+    - spec: intel-mpi@2021.3.0
+      prefix: /apps/intel-mpi/2021.3.0
+      modules:
+      - intel-mpi/2021.3.0
+    - spec: intel-mpi@2021.4.0
+      prefix: /apps/intel-mpi/2021.4.0
+      modules:
+      - intel-mpi/2021.4.0
+    - spec: intel-mpi@2021.5.1
+      prefix: /apps/intel-mpi/2021.5.1
+      modules:
+      - intel-mpi/2021.5.1
+    - spec: intel-mpi@2021.6.0
+      prefix: /apps/intel-mpi/2021.6.0
+      modules:
+      - intel-mpi/2021.6.0
+    - spec: intel-mpi@2021.7.0
+      prefix: /apps/intel-mpi/2021.7.0
+      modules:
+      - intel-mpi/2021.7.0
+  intel-mkl:
+    externals:
+    - spec: intel-mkl@2019.3.199
+      prefix: /apps/intel/compilers_and_libraries_2019.3.199/linux/mkl
+      modules:
+      - intel-mkl/2019.3.199
+    - spec: intel-mkl@2019.4.243
+      prefix: /apps/intel/compilers_and_libraries_2019.4.243/linux/mkl
+      modules:
+      - intel-mkl/2019.4.243
+    - spec: intel-mkl@2019.5.281
+      prefix: /apps/intel/compilers_and_libraries_2019.5.281/linux/mkl
+      modules:
+      - intel-mkl/2019.5.281
+    - spec: intel-mkl@2020.0.166
+      prefix: /apps/intel/compilers_and_libraries_2020.0.166/linux/mkl
+      modules:
+      - intel-mkl/2020.0.166
+    - spec: intel-mkl@2020.1.217
+      prefix: /apps/intel/compilers_and_libraries_2020.1.217/linux/mkl
+      modules:
+      - intel-mkl/2020.1.217
+    - spec: intel-mkl@2020.2.254
+      prefix: /apps/intel/compilers_and_libraries_2020.2.254/linux/mkl
+      modules:
+      - intel-mkl/2020.2.254
+    - spec: intel-mkl@2020.3.304
+      prefix: /apps/intel/compilers_and_libraries_2020.3.304/linux/mkl
+      modules:
+      - intel-mkl/2020.3.304
+    - spec: intel-mkl@2021.1.1
+      prefix: /apps/intel/compilers_and_libraries_2021.1.1/linux/mkl
+      modules:
+      - intel-mkl/2021.1.1
+    - spec: intel-mkl@2021.2.0
+      prefix: /apps/intel/compilers_and_libraries_2021.2.0/linux/mkl
+      modules:
+      - intel-mkl/2021.2.0
+    - spec: intel-mkl@2021.3.0
+      prefix: /apps/intel/compilers_and_libraries_2021.3.0/linux/mkl
+      modules:
+      - intel-mkl/2021.3.0
+    - spec: intel-mkl@2021.4.0
+      prefix: /apps/intel/compilers_and_libraries_2021.4.0/linux/mkl
+      modules:
+      - intel-mkl/2021.4.0
+    - spec: intel-mkl@2022.0.2
+      prefix: /apps/intel/compilers_and_libraries_2022.0.2/linux/mkl
+      modules:
+      - intel-mkl/2022.0.2
+    - spec: intel-mkl@2022.1.0
+      prefix: /apps/intel/compilers_and_libraries_2022.1.0/linux/mkl
+      modules:
+      - intel-mkl/2022.1.0
+    - spec: intel-mkl@2022.2.0
+      prefix: /apps/intel/compilers_and_libraries_2022.2.0/linux/mkl
+      modules:
+      - intel-mkl/2022.2.0
+    buildable: false

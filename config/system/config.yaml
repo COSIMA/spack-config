@@ -1,0 +1,9 @@
+config:
+  install_tree:
+    root: $spack/../opt
+    projections:
+      all: "{architecture}/{compiler.name}-{compiler.version}/{name}-{version}-{hash:7}"
+  license_dir: $spack/../etc/licenses
+  source_cache: $spack/../var/cache
+  environments_root: $spack/../environments # Only work in Spack v0.20 or later.
+
