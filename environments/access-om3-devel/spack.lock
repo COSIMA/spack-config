@@ -10,8 +10,8 @@
       "spec": "openmpi@4.1.4%intel@2021.6.0"
     },
     {
-      "hash": "cludzvio4hlxdetrprlqekxikzziyrzb",
-      "spec": "esmf@8.3.1%intel@2021.6.0 ^openmpi@4.1.4"
+      "hash": "y4sqi7zy566su3baaklfszy2lrkzbgsk",
+      "spec": "esmf@8.3.1%intel@2021.6.0+parallelio ^openmpi@4.1.4"
     },
     {
       "hash": "i2vi3edefpp32kfv727guykzwtg4uwin",
@@ -115,7 +115,7 @@
       "package_hash": "u6d5ubk5gfbtrdsqkalq66k5jntmnptu2sswgtre7hqe6ijvyndq====",
       "hash": "yvq3ppqr2udizcor23x7j2x6qmd6xuxs"
     },
-    "cludzvio4hlxdetrprlqekxikzziyrzb": {
+    "y4sqi7zy566su3baaklfszy2lrkzbgsk": {
       "name": "esmf",
       "version": "8.3.1",
       "arch": {
@@ -172,7 +172,7 @@
         "external-lapack": false,
         "mpi": true,
         "netcdf": true,
-        "parallelio": false,
+        "parallelio": true,
         "pnetcdf": true,
         "xerces": true,
         "cflags": [],
@@ -225,6 +225,14 @@
           ]
         },
         {
+          "name": "parallelio",
+          "hash": "zqo4fh6k47irzltpke45dtpovjhf4fvy",
+          "type": [
+            "build",
+            "link"
+          ]
+        },
+        {
           "name": "xerces-c",
           "hash": "z57iwglgagtuz5w274jzwulvnlnnpnrv",
           "type": [
@@ -241,7 +249,7 @@
           ]
         }
       ],
-      "hash": "cludzvio4hlxdetrprlqekxikzziyrzb"
+      "hash": "y4sqi7zy566su3baaklfszy2lrkzbgsk"
     },
     "4z3rhzq6kupydi7arpas3tj63weosukw": {
       "name": "libxml2",
@@ -1131,6 +1139,106 @@
       ],
       "package_hash": "3scnrwines7vx67zdipfgrib7txcuib4paujzwzgxhlop4p2vgca====",
       "hash": "4lnqmockddbrrcesq3m2d6ikkkwsod5l"
+    },
+    "zqo4fh6k47irzltpke45dtpovjhf4fvy": {
+      "name": "parallelio",
+      "version": "2.5.9",
+      "arch": {
+        "platform": "linux",
+        "platform_os": "rocky8",
+        "target": {
+          "name": "cascadelake",
+          "vendor": "GenuineIntel",
+          "features": [
+            "adx",
+            "aes",
+            "avx",
+            "avx2",
+            "avx512_vnni",
+            "avx512bw",
+            "avx512cd",
+            "avx512dq",
+            "avx512f",
+            "avx512vl",
+            "bmi1",
+            "bmi2",
+            "clflushopt",
+            "clwb",
+            "f16c",
+            "fma",
+            "mmx",
+            "movbe",
+            "pclmulqdq",
+            "popcnt",
+            "rdrand",
+            "rdseed",
+            "sse",
+            "sse2",
+            "sse4_1",
+            "sse4_2",
+            "ssse3",
+            "xsavec",
+            "xsaveopt"
+          ],
+          "generation": 0,
+          "parents": [
+            "skylake_avx512"
+          ]
+        }
+      },
+      "compiler": {
+        "name": "intel",
+        "version": "2021.6.0"
+      },
+      "namespace": "builtin",
+      "parameters": {
+        "build_system": "cmake",
+        "build_type": "RelWithDebInfo",
+        "fortran": true,
+        "ipo": false,
+        "logging": false,
+        "pnetcdf": false,
+        "timing": false,
+        "cflags": [],
+        "cppflags": [],
+        "cxxflags": [],
+        "fflags": [],
+        "ldflags": [],
+        "ldlibs": []
+      },
+      "package_hash": "ay6hfcibj3i2sz7bjwjegou5jcfl4r3ttag4uo3iked3cdppd2mq====",
+      "dependencies": [
+        {
+          "name": "cmake",
+          "hash": "tr5446kifdb2z2ygjannnsdf5st2hqvl",
+          "type": [
+            "build"
+          ]
+        },
+        {
+          "name": "netcdf-c",
+          "hash": "t5vmcraajgpax4rnsuceljayogf5zmdb",
+          "type": [
+            "link"
+          ]
+        },
+        {
+          "name": "netcdf-fortran",
+          "hash": "l6jywjuwrnqdfheafvxrnslkvrafhpr7",
+          "type": [
+            "link"
+          ]
+        },
+        {
+          "name": "openmpi",
+          "hash": "yvq3ppqr2udizcor23x7j2x6qmd6xuxs",
+          "type": [
+            "build",
+            "link"
+          ]
+        }
+      ],
+      "hash": "zqo4fh6k47irzltpke45dtpovjhf4fvy"
     },
     "z57iwglgagtuz5w274jzwulvnlnnpnrv": {
       "name": "xerces-c",
@@ -2603,106 +2711,6 @@
         }
       ],
       "hash": "i2vi3edefpp32kfv727guykzwtg4uwin"
-    },
-    "zqo4fh6k47irzltpke45dtpovjhf4fvy": {
-      "name": "parallelio",
-      "version": "2.5.9",
-      "arch": {
-        "platform": "linux",
-        "platform_os": "rocky8",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
-      },
-      "compiler": {
-        "name": "intel",
-        "version": "2021.6.0"
-      },
-      "namespace": "builtin",
-      "parameters": {
-        "build_system": "cmake",
-        "build_type": "RelWithDebInfo",
-        "fortran": true,
-        "ipo": false,
-        "logging": false,
-        "pnetcdf": false,
-        "timing": false,
-        "cflags": [],
-        "cppflags": [],
-        "cxxflags": [],
-        "fflags": [],
-        "ldflags": [],
-        "ldlibs": []
-      },
-      "package_hash": "ay6hfcibj3i2sz7bjwjegou5jcfl4r3ttag4uo3iked3cdppd2mq====",
-      "dependencies": [
-        {
-          "name": "cmake",
-          "hash": "tr5446kifdb2z2ygjannnsdf5st2hqvl",
-          "type": [
-            "build"
-          ]
-        },
-        {
-          "name": "netcdf-c",
-          "hash": "t5vmcraajgpax4rnsuceljayogf5zmdb",
-          "type": [
-            "link"
-          ]
-        },
-        {
-          "name": "netcdf-fortran",
-          "hash": "l6jywjuwrnqdfheafvxrnslkvrafhpr7",
-          "type": [
-            "link"
-          ]
-        },
-        {
-          "name": "openmpi",
-          "hash": "yvq3ppqr2udizcor23x7j2x6qmd6xuxs",
-          "type": [
-            "build",
-            "link"
-          ]
-        }
-      ],
-      "hash": "zqo4fh6k47irzltpke45dtpovjhf4fvy"
     }
   }
 }
