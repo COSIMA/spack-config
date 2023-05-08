@@ -3,9 +3,23 @@
 # It describes a set of packages to be installed, along with
 # configuration settings.
 spack:
-  # add package specs to the `specs` list
-  specs: [esmf@8.3.1%intel@2021.6.0 ^openmpi@4.1.4, fms%intel@2021.6.0 ^openmpi@4.1.4,
-    parallelio%intel@2021.6.0 ^openmpi@4.1.4]
+  definitions:
+  - compilers:
+    - intel@2021.6.0
+  - mpis:
+    - openmpi@4.1.4
+  - packages:
+    - esmf@8.3.1
+    - fms
+    - parallelio
+  specs:
+  - matrix:
+    - [$mpis]
+    - [$%compilers]
+  - matrix:
+    - [$packages]
+    - [$^mpis]
+    - [$%compilers]
   view: true
   concretizer:
     unify: true
