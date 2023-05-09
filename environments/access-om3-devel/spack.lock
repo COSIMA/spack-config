@@ -10,16 +10,12 @@
       "spec": "openmpi@4.1.4%intel@2021.6.0"
     },
     {
-      "hash": "y4sqi7zy566su3baaklfszy2lrkzbgsk",
-      "spec": "esmf@8.3.1%intel@2021.6.0+parallelio ^openmpi@4.1.4"
+      "hash": "ptrivi22nfb7u2yrt6xynvqtnnve42yf",
+      "spec": "esmf@8.3.1%intel@2021.6.0+parallelio~pnetcdf ^openmpi@4.1.4"
     },
     {
       "hash": "i2vi3edefpp32kfv727guykzwtg4uwin",
       "spec": "fms%intel@2021.6.0 ^openmpi@4.1.4"
-    },
-    {
-      "hash": "zqo4fh6k47irzltpke45dtpovjhf4fvy",
-      "spec": "parallelio%intel@2021.6.0 ^openmpi@4.1.4"
     }
   ],
   "concrete_specs": {
@@ -115,7 +111,7 @@
       "package_hash": "u6d5ubk5gfbtrdsqkalq66k5jntmnptu2sswgtre7hqe6ijvyndq====",
       "hash": "yvq3ppqr2udizcor23x7j2x6qmd6xuxs"
     },
-    "y4sqi7zy566su3baaklfszy2lrkzbgsk": {
+    "ptrivi22nfb7u2yrt6xynvqtnnve42yf": {
       "name": "esmf",
       "version": "8.3.1",
       "arch": {
@@ -173,7 +169,7 @@
         "mpi": true,
         "netcdf": true,
         "parallelio": true,
-        "pnetcdf": true,
+        "pnetcdf": false,
         "xerces": true,
         "cflags": [],
         "cppflags": [],
@@ -217,14 +213,6 @@
           ]
         },
         {
-          "name": "parallel-netcdf",
-          "hash": "xty6sc5nvkq6i4geyjlxzlai4enmeqmw",
-          "type": [
-            "build",
-            "link"
-          ]
-        },
-        {
           "name": "parallelio",
           "hash": "zqo4fh6k47irzltpke45dtpovjhf4fvy",
           "type": [
@@ -249,7 +237,7 @@
           ]
         }
       ],
-      "hash": "y4sqi7zy566su3baaklfszy2lrkzbgsk"
+      "hash": "ptrivi22nfb7u2yrt6xynvqtnnve42yf"
     },
     "4z3rhzq6kupydi7arpas3tj63weosukw": {
       "name": "libxml2",
@@ -970,175 +958,6 @@
         }
       ],
       "hash": "l6jywjuwrnqdfheafvxrnslkvrafhpr7"
-    },
-    "xty6sc5nvkq6i4geyjlxzlai4enmeqmw": {
-      "name": "parallel-netcdf",
-      "version": "1.12.3",
-      "arch": {
-        "platform": "linux",
-        "platform_os": "rocky8",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
-      },
-      "compiler": {
-        "name": "intel",
-        "version": "2021.6.0"
-      },
-      "namespace": "builtin",
-      "parameters": {
-        "build_system": "autotools",
-        "burstbuffer": false,
-        "cxx": true,
-        "fortran": true,
-        "pic": true,
-        "shared": true,
-        "cflags": [],
-        "cppflags": [],
-        "cxxflags": [],
-        "fflags": [],
-        "ldflags": [],
-        "ldlibs": []
-      },
-      "package_hash": "th5gt5332pthrwte4o2dlsgy6a7yd76ijxwgzzci7dgae636ybga====",
-      "dependencies": [
-        {
-          "name": "m4",
-          "hash": "6lm7an562pgot5yidv7coxy2hp5yrknh",
-          "type": [
-            "build"
-          ]
-        },
-        {
-          "name": "openmpi",
-          "hash": "yvq3ppqr2udizcor23x7j2x6qmd6xuxs",
-          "type": [
-            "build",
-            "link"
-          ]
-        },
-        {
-          "name": "perl",
-          "hash": "4lnqmockddbrrcesq3m2d6ikkkwsod5l",
-          "type": [
-            "build"
-          ]
-        }
-      ],
-      "hash": "xty6sc5nvkq6i4geyjlxzlai4enmeqmw"
-    },
-    "4lnqmockddbrrcesq3m2d6ikkkwsod5l": {
-      "name": "perl",
-      "version": "5.26.3",
-      "arch": {
-        "platform": "linux",
-        "platform_os": "rocky8",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
-      },
-      "compiler": {
-        "name": "intel",
-        "version": "2021.6.0"
-      },
-      "namespace": "builtin",
-      "parameters": {
-        "build_system": "generic",
-        "cpanm": false,
-        "patches": [
-          "8cf4302ca8b480c60ccdcaa29ec53d9d50a71d4baf469ac8c6fca00ca31e58a2"
-        ],
-        "shared": true,
-        "threads": true,
-        "cflags": [],
-        "cppflags": [],
-        "cxxflags": [],
-        "fflags": [],
-        "ldflags": [],
-        "ldlibs": []
-      },
-      "external": {
-        "path": "/usr",
-        "module": null,
-        "extra_attributes": {}
-      },
-      "patches": [
-        "8cf4302ca8b480c60ccdcaa29ec53d9d50a71d4baf469ac8c6fca00ca31e58a2"
-      ],
-      "package_hash": "3scnrwines7vx67zdipfgrib7txcuib4paujzwzgxhlop4p2vgca====",
-      "hash": "4lnqmockddbrrcesq3m2d6ikkkwsod5l"
     },
     "zqo4fh6k47irzltpke45dtpovjhf4fvy": {
       "name": "parallelio",
