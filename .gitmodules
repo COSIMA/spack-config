@@ -2,3 +2,6 @@
 	path = spack
 	url = https://github.com/spack/spack.git
 	shallow = true
+[submodule "repos/access-nri"]
+	path = repos/access-nri
+	url = git@github.com:ACCESS-NRI/spack_packages.git
