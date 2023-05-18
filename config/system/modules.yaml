@@ -18,6 +18,7 @@ modules:
     tcl:
       hash_length: 0
       naming_scheme: '{name}/{version}-{compiler.name}-{compiler.version}'
+      exclude_implicits: True
       exclude:
         - 'openmpi'
       all:
