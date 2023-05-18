@@ -5,3 +5,6 @@
 [submodule "repos/access-nri"]
 	path = repos/access-nri
 	url = git@github.com:ACCESS-NRI/spack_packages.git
+[submodule "repos/cosima"]
+	path = repos/cosima
+	url = git@github.com:COSIMA/spack_packages.git
