@@ -75,7 +75,7 @@ pushd ${PREFIX}
 module load python3/$PYVERSION
 virtualenv venv --prompt spack -p /apps/python3/$PYVERSION/bin/python3
 
-sed -i  "/^deactivate () {/a  \    unset -f spack\n    unset -f _spack_shell_wrapper\n    unset SPACK_ROOT\n    unset SPACK_LD_LIBRARY_PATH\n    unset SPACK_PYTHON\n    unset SPACK_SYSTEM_CONFIG_PATH\n    unset SPACK_USER_CACHE_PATH\n    module unload python3/$PYVERSION\n    module unuse $PREFIX/share/modules" venv/bin/activate
+sed -i  "/^deactivate () {/a  \    unset -f spack\n    unset -f _spack_shell_wrapper\n    unset SPACK_ROOT\n    unset SPACK_LD_LIBRARY_PATH\n    unset SPACK_PYTHON\n    unset SPACK_SYSTEM_CONFIG_PATH\n    unset SPACK_USER_CACHE_PATH\n    module unload python3/$PYVERSION\n    module unuse $PREFIX/share/modules/\n    module unuse $PREFIX/share/modules/\n    module unuse $PREFIX/share/modules/*/" venv/bin/activate
 
 cat <<EOF >> venv/bin/activate
 
@@ -84,7 +84,6 @@ module load python3/$PYVERSION
 export SPACK_PYTHON=/apps/python3/$PYVERSION/bin/python3
 export SPACK_SYSTEM_CONFIG_PATH=$PREFIX/config/system/
 export SPACK_USER_CACHE_PATH=$PREFIX/user_cache
-module use $PREFIX/share/modules
 
 . $PREFIX/spack/share/spack/setup-env.sh
 EOF
