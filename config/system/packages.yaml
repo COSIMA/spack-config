@@ -359,59 +359,61 @@ packages:
   intel-mkl:
     externals:
     - spec: intel-mkl@2019.3.199
-      prefix: /apps/intel/compilers_and_libraries_2019.3.199/linux/mkl
+      prefix: /apps/intel-ct/2019.3.199/mkl
       modules:
       - intel-mkl/2019.3.199
     - spec: intel-mkl@2019.4.243
-      prefix: /apps/intel/compilers_and_libraries_2019.4.243/linux/mkl
+      prefix: /apps/intel-ct/2019.4.243/mkl
       modules:
       - intel-mkl/2019.4.243
     - spec: intel-mkl@2019.5.281
-      prefix: /apps/intel/compilers_and_libraries_2019.5.281/linux/mkl
+      prefix: /apps/intel-ct/2019.5.281/mkl
       modules:
       - intel-mkl/2019.5.281
     - spec: intel-mkl@2020.0.166
-      prefix: /apps/intel/compilers_and_libraries_2020.0.166/linux/mkl
+      prefix: /apps/intel-ct/2020.0.166/mkl
       modules:
       - intel-mkl/2020.0.166
     - spec: intel-mkl@2020.1.217
-      prefix: /apps/intel/compilers_and_libraries_2020.1.217/linux/mkl
+      prefix: /apps/intel-ct/2020.1.217/mkl
       modules:
       - intel-mkl/2020.1.217
     - spec: intel-mkl@2020.2.254
-      prefix: /apps/intel/compilers_and_libraries_2020.2.254/linux/mkl
+      prefix: /apps/intel-ct/2020.2.254/mkl
       modules:
       - intel-mkl/2020.2.254
     - spec: intel-mkl@2020.3.304
-      prefix: /apps/intel/compilers_and_libraries_2020.3.304/linux/mkl
+      prefix: /apps/intel-ct/2020.3.304/mkl
       modules:
       - intel-mkl/2020.3.304
-    - spec: intel-mkl@2021.1.1
-      prefix: /apps/intel/compilers_and_libraries_2021.1.1/linux/mkl
+  intel-oneapi-mkl:
+    externals:
+    - spec: intel-oneapi-mkl@2021.1.1
+      prefix: /apps/intel-oneapi/mkl/2021.1.1
       modules:
       - intel-mkl/2021.1.1
-    - spec: intel-mkl@2021.2.0
-      prefix: /apps/intel/compilers_and_libraries_2021.2.0/linux/mkl
+    - spec: intel-oneapi-mkl@2021.2.0
+      prefix: /apps/intel-oneapi/mkl/2021.2.0
       modules:
       - intel-mkl/2021.2.0
-    - spec: intel-mkl@2021.3.0
-      prefix: /apps/intel/compilers_and_libraries_2021.3.0/linux/mkl
+    - spec: intel-oneapi-mkl@2021.3.0
+      prefix: /apps/intel-oneapi/mkl/2021.3.0
       modules:
       - intel-mkl/2021.3.0
-    - spec: intel-mkl@2021.4.0
-      prefix: /apps/intel/compilers_and_libraries_2021.4.0/linux/mkl
+    - spec: intel-oneapi-mkl@2021.4.0
+      prefix: /apps/intel-oneapi/mkl/2021.4.0
       modules:
       - intel-mkl/2021.4.0
-    - spec: intel-mkl@2022.0.2
-      prefix: /apps/intel/compilers_and_libraries_2022.0.2/linux/mkl
+    - spec: intel-oneapi-mkl@2022.0.2
+      prefix: /apps/intel-oneapi/mkl/2022.0.2
       modules:
       - intel-mkl/2022.0.2
-    - spec: intel-mkl@2022.1.0
-      prefix: /apps/intel/compilers_and_libraries_2022.1.0/linux/mkl
+    - spec: intel-oneapi-mkl@2022.1.0
+      prefix: /apps/intel-oneapi/mkl/2022.1.0
       modules:
       - intel-mkl/2022.1.0
-    - spec: intel-mkl@2022.2.0
-      prefix: /apps/intel/compilers_and_libraries_2022.2.0/linux/mkl
+    - spec: intel-oneapi-mkl@2022.2.0
+      prefix: /apps/intel-oneapi/mkl/2022.2.0
       modules:
       - intel-mkl/2022.2.0
     buildable: false
