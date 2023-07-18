@@ -13,7 +13,7 @@ spack:
     - parallelio
     - netcdf-fortran
     - netcdf-c
-    - fms
+    - fms@2020.04.03
     - xerces-c
   specs:
   - matrix:

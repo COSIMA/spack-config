@@ -26,8 +26,8 @@
       "spec": "netcdf-c%intel@2021.6.0 ^openmpi@4.1.4"
     },
     {
-      "hash": "i2vi3edefpp32kfv727guykzwtg4uwin",
-      "spec": "fms%intel@2021.6.0 ^openmpi@4.1.4"
+      "hash": "bidzldp3gmecu3f2cpfc6rfgvblrjnms",
+      "spec": "fms@2020.04.03%intel@2021.6.0 ^openmpi@4.1.4"
     },
     {
       "hash": "z57iwglgagtuz5w274jzwulvnlnnpnrv",
@@ -2442,9 +2442,9 @@
       "package_hash": "j36yrn6u2zfelltggatklj4g4wjfies7l2lwikrnejm4hepg2mdq====",
       "hash": "eph337wsb7urevsg7iblhwu6nhtgep6a"
     },
-    "i2vi3edefpp32kfv727guykzwtg4uwin": {
+    "bidzldp3gmecu3f2cpfc6rfgvblrjnms": {
       "name": "fms",
-      "version": "2022.04",
+      "version": "2020.04.03",
       "arch": {
         "platform": "linux",
         "platform_os": "rocky8",
@@ -2497,13 +2497,10 @@
         "64bit": true,
         "build_system": "cmake",
         "build_type": "RelWithDebInfo",
-        "constants": "GFDL",
-        "fpic": false,
         "gfs_phys": true,
         "ipo": false,
         "openmp": true,
         "quad_precision": true,
-        "yaml": false,
         "cflags": [],
         "cppflags": [],
         "cxxflags": [],
@@ -2511,7 +2508,7 @@
         "ldflags": [],
         "ldlibs": []
       },
-      "package_hash": "lzuwwlvpbmu5hpb47ly5s6udectp7ofdpy7rl7uuwhmakp3rhaxq====",
+      "package_hash": "53iaupzshdqkxwpqhimwwi6efvnn2ax2ymmqcj7ojxvippdhvppq====",
       "dependencies": [
         {
           "name": "cmake",
@@ -2545,7 +2542,7 @@
           ]
         }
       ],
-      "hash": "i2vi3edefpp32kfv727guykzwtg4uwin"
+      "hash": "bidzldp3gmecu3f2cpfc6rfgvblrjnms"
     }
   }
 }
