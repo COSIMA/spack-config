@@ -9,12 +9,11 @@ spack:
   - mpis:
     - openmpi@4.1.4
   - packages:
-    - esmf@8.3.1+parallelio~pnetcdf
-    - parallelio
-    - netcdf-fortran
-    - netcdf-c
-    - fms
-    - xerces-c
+    - esmf@8.3.1+external-parallelio cxxflags='-fp-model=precise' fflags='-fp-model=precise'
+    - parallelio@2.5.10
+    - netcdf-fortran@4.6.0
+    - netcdf-c@4.9.2
+    - fms@2023.01 precision=64
   specs:
   - matrix:
     - [$mpis]
