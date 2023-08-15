@@ -11,7 +11,7 @@ modules:
   default:
     # Where to install modules
     roots:
-      tcl: $spack/../share/modules
+      tcl: $spack/../modules
       lmod: $spack/../share/lmod
     # What type of modules to use ("tcl" and/or "lmod")
     enable: [tcl]
