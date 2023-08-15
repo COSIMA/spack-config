@@ -8,3 +8,7 @@ spack:
   view: true
   concretizer:
     unify: true
+  modules:
+    default:
+      roots:
+        tcl: $spack/../modules/common_tools_and_libraries

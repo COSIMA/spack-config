@@ -25,6 +25,12 @@ spack:
   view: true
   concretizer:
     unify: true
+  modules:
+    default:
+      roots:
+        tcl: $spack/..//modules/access-om3/devel
+      tcl:
+        hash_length: 7
   mirrors:
     sources:
       fetch:
