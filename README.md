@@ -36,7 +36,8 @@ environments. Currently the following environments are provided (the names
 should be self-explanatory):
 1. `access-om3-0_1_0`
 2. `access-om3-devel`
-3. `common_tools_and_libraries`
+3. `cesm-0_1_0`
+4. `common_tools_and_libraries`
 
 Installation of a spack environment is usually quite straightforward, but
 because this can be a CPU intensive operation and take quite some time, it is
