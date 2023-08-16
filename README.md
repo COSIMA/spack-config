@@ -32,10 +32,11 @@ spack ()
 ## Installing software
 
 It is recommended that all software be installed using spack
-environments. Currently two environments are provided (the names should be
-self-explanatory):
-1. `access-om3-devel`
-2. `common_tools_and_libraries`
+environments. Currently the following environments are provided (the names
+should be self-explanatory):
+1. `access-om3-0_1_0`
+2. `access-om3-devel`
+3. `common_tools_and_libraries`
 
 Installation of a spack environment is usually quite straightforward, but
 because this can be a CPU intensive operation and take quite some time, it is
@@ -86,7 +87,7 @@ $ spack env depfile -o Makefile
 $ make -j
 ```
 
-In the end, all the packages should be available in
-`/g/data/ik11/spack/0.20.1/opt/linux-rocky8-cascadelake/` and the corresponding
-environment modules are installed under
-`/g/data/ik11/spack/0.20.1/share/modules/linux-rocky8-cascadelake/`.
+In the end, all the packages should be available in some subdirectory of
+`/g/data/ik11/spack/0.20.1/opt/` and the corresponding environment modules are
+installed under a subdirectory of `/g/data/ik11/spack/0.20.1/modules`. The
+actual subdirectories depend on the selected environement.
