@@ -5,3 +5,5 @@
 /user_cache
 /environments/*/.spack-env
 /sources
+/modules
+.spack-db
