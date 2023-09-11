@@ -9,11 +9,11 @@ spack:
   - mpis:
     - openmpi@4.1.4
   - packages:
-    - esmf@8.3.1+external-parallelio cxxflags='-fp-model=precise' fflags='-fp-model=precise'
-    - parallelio@2.5.10
+    - esmf@8.4.2+debug
+    - parallelio@2.5.10 +timing build_type=RelWithDebInfo fflags='-qno-opt-dynamic-align -convert big_endian -assume byterecl -ftz -traceback -assume realloc_lhs -fp-model source -O2 -debug minimal' cflags='-qno-opt-dynamic-align -fp-model precise -std=gnu99 -O2 -debug minimal'
+    - netcdf-c@4.9.2 build_system=cmake build_type=RelWithDebInfo
     - netcdf-fortran@4.6.0
-    - netcdf-c@4.9.2
-    - fms@2023.01 precision=64
+    - fms@git.2021.03.01 precision=64 +large_file ~gfs_phys ~openmp ~quad_precision build_type=RelWithDebInfo fflags='-qno-opt-dynamic-align -convert big_endian -assume byterecl -ftz -traceback -assume realloc_lhs -fp-model source -O2 -debug minimal' cflags='-qno-opt-dynamic-align -fp-model precise -std=gnu99 -O2 -debug minimal'
   specs:
   - matrix:
     - [$mpis]
@@ -28,9 +28,9 @@ spack:
   modules:
     default:
       roots:
-        tcl: $spack/..//modules/access-om3/devel
+        tcl: $spack/../modules/access-om3/0.x.0
       tcl:
-        hash_length: 7
+        naming_scheme: '{name}/{version}'
   mirrors:
     sources:
       fetch:
