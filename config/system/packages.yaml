@@ -400,15 +400,15 @@ packages:
       prefix: /apps/intel-ct/2021.0.3
       modules:
       - intel-mkl/2021.3.0
-   - spec: "intel-oneapi-mkl@2021.4.0 +cluster mpi_family=openmpi"
+    - spec: "intel-oneapi-mkl@2021.4.0 +cluster mpi_family=openmpi"
       prefix: /apps/intel-ct/2021.4.0
       modules:
       - intel-mkl/2021.4.0
-   - spec: "intel-oneapi-mkl@2022.0.2 +cluster mpi_family=openmpi"
+    - spec: "intel-oneapi-mkl@2022.0.2 +cluster mpi_family=openmpi"
       prefix: /apps/intel-ct/2022.0.2
       modules:
       - intel-mkl/2022.0.2
-   - spec: "intel-oneapi-mkl@2022.1.0 +cluster mpi_family=openmpi"
+    - spec: "intel-oneapi-mkl@2022.1.0 +cluster mpi_family=openmpi"
       prefix: /apps/intel-oneapi/mkl/2022.1.0
       modules:
       - intel-mkl/2022.1.0
