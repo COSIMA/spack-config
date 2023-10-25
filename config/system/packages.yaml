@@ -171,130 +171,62 @@ packages:
       prefix: /apps/openmpi/2.1.6
       modules:
       - openmpi/2.1.6
-    - spec: openmpi@2.1.6-debug
-      prefix: /apps/openmpi/2.1.6-debug
-      modules:
-      - openmpi/2.1.6-debug
-    - spec: openmpi@2.1.6-mt
-      prefix: /apps/openmpi/2.1.6-mt
-      modules:
-      - openmpi/2.1.6-mt
-    - spec: openmpi@2.1.6-mt-debug
-      prefix: /apps/openmpi/2.1.6-mt-debug
-      modules:
-      - openmpi/2.1.6-mt-debug
     - spec: openmpi@3.0.4
       prefix: /apps/openmpi/3.0.4
       modules:
       - openmpi/3.0.4
-    - spec: openmpi@3.0.4-debug
-      prefix: /apps/openmpi/3.0.4-debug
-      modules:
-      - openmpi/3.0.4-debug
     - spec: openmpi@3.1.4
       prefix: /apps/openmpi/3.1.4
       modules:
       - openmpi/3.1.4
-    - spec: openmpi@3.1.4-debug
-      prefix: /apps/openmpi/3.1.4-debug
-      modules:
-      - openmpi/3.1.4-debug
     - spec: openmpi@4.0.1
       prefix: /apps/openmpi/4.0.1
       modules:
       - openmpi/4.0.1
-    - spec: openmpi@4.0.1-debug
-      prefix: /apps/openmpi/4.0.1-debug
-      modules:
-      - openmpi/4.0.1-debug
     - spec: openmpi@4.0.2
       prefix: /apps/openmpi/4.0.2
       modules:
       - openmpi/4.0.2
-    - spec: openmpi@4.0.2-debug
-      prefix: /apps/openmpi/4.0.2-debug
-      modules:
-      - openmpi/4.0.2-debug
     - spec: openmpi@4.0.3
       prefix: /apps/openmpi/4.0.3
       modules:
       - openmpi/4.0.3
-    - spec: openmpi@4.0.3-debug
-      prefix: /apps/openmpi/4.0.3-debug
-      modules:
-      - openmpi/4.0.3-debug
     - spec: openmpi@4.0.4
       prefix: /apps/openmpi/4.0.4
       modules:
       - openmpi/4.0.4
-    - spec: openmpi@4.0.4-debug
-      prefix: /apps/openmpi/4.0.4-debug
-      modules:
-      - openmpi/4.0.4-debug
     - spec: openmpi@4.0.5
       prefix: /apps/openmpi/4.0.5
       modules:
       - openmpi/4.0.5
-    - spec: openmpi@4.0.5-debug
-      prefix: /apps/openmpi/4.0.5-debug
-      modules:
-      - openmpi/4.0.5-debug
     - spec: openmpi@4.0.6
       prefix: /apps/openmpi/4.0.6
       modules:
       - openmpi/4.0.6
-    - spec: openmpi@4.0.6-debug
-      prefix: /apps/openmpi/4.0.6-debug
-      modules:
-      - openmpi/4.0.6-debug
     - spec: openmpi@4.0.7
       prefix: /apps/openmpi/4.0.7
       modules:
       - openmpi/4.0.7
-    - spec: openmpi@4.0.7-debug
-      prefix: /apps/openmpi/4.0.7-debug
-      modules:
-      - openmpi/4.0.7-debug
     - spec: openmpi@4.1.0
       prefix: /apps/openmpi/4.1.0
       modules:
       - openmpi/4.1.0
-    - spec: openmpi@4.1.0-debug
-      prefix: /apps/openmpi/4.1.0-debug
-      modules:
-      - openmpi/4.1.0-debug
     - spec: openmpi@4.1.1
       prefix: /apps/openmpi/4.1.1
       modules:
       - openmpi/4.1.1
-    - spec: openmpi@4.1.1-debug
-      prefix: /apps/openmpi/4.1.1-debug
-      modules:
-      - openmpi/4.1.1-debug
     - spec: openmpi@4.1.2
       prefix: /apps/openmpi/4.1.2
       modules:
       - openmpi/4.1.2
-    - spec: openmpi@4.1.2-debug
-      prefix: /apps/openmpi/4.1.2-debug
-      modules:
-      - openmpi/4.1.2-debug
     - spec: openmpi@4.1.3
       prefix: /apps/openmpi/4.1.3
       modules:
       - openmpi/4.1.3
-    - spec: openmpi@4.1.3-debug
-      prefix: /apps/openmpi/4.1.3-debug
-      modules:
-      - openmpi/4.1.3-debug
     - spec: openmpi@4.1.4
       prefix: /apps/openmpi/4.1.4
       modules:
       - openmpi/4.1.4
-    - spec: openmpi@4.1.4-debug
-      prefix: /apps/openmpi/4.1.4-debug
-      modules:
-      - openmpi/4.1.4-debug
     buildable: true
   mpi:
     buildable: false
