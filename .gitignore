@@ -8,3 +8,4 @@
 /modules
 /bin
 .spack-db
+spack.lock
