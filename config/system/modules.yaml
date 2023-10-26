@@ -23,6 +23,9 @@ modules:
         - 'parallelio'
         - 'netcdf-fortran'
         - 'netcdf-c'
+        - 'esmf'
+        - 'fms'
+        - 'access-om3'
       exclude:
         - 'openmpi'
       all:
