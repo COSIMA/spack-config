@@ -1,7 +1,7 @@
 mirrors:
   sources:
     fetch:
-      url: file:///g/data/ik11/spack/0.20.1/sources
+      url: file:///g/data/ik11/spack/0.21.2/sources
       access_pair:
       - null
       - null
@@ -9,7 +9,7 @@ mirrors:
       profile: null
       endpoint_url: null
     push:
-      url: file:///g/data/ik11/spack/0.20.1/sources
+      url: file:///g/data/ik11/spack/0.21.2/sources
       access_pair:
       - null
       - null
