@@ -196,6 +196,34 @@ compilers:
     environment: {}
     extra_rpaths: []
 - compiler:
+    spec: intel@2021.8.0
+    paths:
+      cc: /apps/intel-ct/wrapper/icc
+      cxx: /apps/intel-ct/wrapper/icpc
+      f77: /apps/intel-ct/wrapper/ifort
+      fc: /apps/intel-ct/wrapper/ifort
+    flags: {}
+    operating_system: rocky8
+    target: x86_64
+    modules:
+    - intel-compiler/2021.8.0
+    environment: {}
+    extra_rpaths: []
+- compiler:
+    spec: intel@2021.10.0
+    paths:
+      cc: /apps/intel-ct/wrapper/icc
+      cxx: /apps/intel-ct/wrapper/icpc
+      f77: /apps/intel-ct/wrapper/ifort
+      fc: /apps/intel-ct/wrapper/ifort
+    flags: {}
+    operating_system: rocky8
+    target: x86_64
+    modules:
+    - intel-compiler/2021.10.0
+    environment: {}
+    extra_rpaths: []
+- compiler:
     spec: oneapi@2022.0.0
     paths:
       cc: /apps/intel-ct/wrapper/icx
@@ -238,6 +266,48 @@ compilers:
     environment: {}
     extra_rpaths: []
 - compiler:
+    spec: oneapi@2023.0.0
+    paths:
+      cc: /apps/intel-ct/wrapper/icx
+      cxx: /apps/intel-ct/wrapper/icp
+      f77: /apps/intel-ct/wrapper/ifx
+      fc: /apps/intel-ct/wrapper/ifx
+    flags: {}
+    operating_system: rocky8
+    target: x86_64
+    modules:
+    - intel-compiler-llvm/2023.0.0
+    environment: {}
+    extra_rpaths: []    
+- compiler:
+    spec: oneapi@2023.2.0
+    paths:
+      cc: /apps/intel-ct/wrapper/icx
+      cxx: /apps/intel-ct/wrapper/icp
+      f77: /apps/intel-ct/wrapper/ifx
+      fc: /apps/intel-ct/wrapper/ifx
+    flags: {}
+    operating_system: rocky8
+    target: x86_64
+    modules:
+    - intel-compiler-llvm/2023.2.0
+    environment: {}
+    extra_rpaths: []
+- compiler:
+    spec: oneapi@2024.0.2
+    paths:
+      cc: /apps/intel-ct/wrapper/icx
+      cxx: /apps/intel-ct/wrapper/icp
+      f77: /apps/intel-ct/wrapper/ifx
+      fc: /apps/intel-ct/wrapper/ifx
+    flags: {}
+    operating_system: rocky8
+    target: x86_64
+    modules:
+    - intel-compiler-llvm/2024.0.2
+    environment: {}
+    extra_rpaths: []
+- compiler:
     spec: gcc@10.3.0
     paths:
       cc: /opt/nci/wrappers/gcc
@@ -277,5 +347,19 @@ compilers:
     target: x86_64
     modules:
     - gcc/12.2.0
+    environment: {}
+    extra_rpaths: []
+- compiler:
+    spec: gcc@13.2.0
+    paths:
+      cc: /opt/nci/wrappers/gcc
+      cxx: /opt/nci/wrappers/g++
+      f77: /opt/nci/wrappers/gfortran
+      fc: /opt/nci/wrappers/gfortran
+    flags: {}
+    operating_system: rocky8
+    target: x86_64
+    modules:
+    - gcc/13.2.0
     environment: {}
     extra_rpaths: []

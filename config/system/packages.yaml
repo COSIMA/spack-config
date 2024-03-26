@@ -1,7 +1,7 @@
 packages:
   all:
     compiler:
-    - intel@2021.6.0
+    - intel@2021.10.0
     - intel
     - oneapi
     - gcc
@@ -159,6 +159,14 @@ packages:
       prefix: /apps/python3/3.11.0
       modules:
       - python3/3.11.0
+    - spec: python@3.11.7+bz2+ctypes+dbm+lzma+nis+pyexpat~pythoncmd+readline+sqlite3+ssl+tix+tkinter+uuid+zlib
+      prefix: /apps/python3/3.11.7
+      modules:
+      - python3/3.11.7
+    - spec: python@3.12.1+bz2+ctypes+dbm+lzma+nis+pyexpat~pythoncmd+readline+sqlite3+ssl+tix+tkinter+uuid+zlib
+      prefix: /apps/python3/3.12.1
+      modules:
+      - python3/3.12.1
     buildable: false
   perl:
     externals:
@@ -227,6 +235,10 @@ packages:
       prefix: /apps/openmpi/4.1.4
       modules:
       - openmpi/4.1.4
+    - spec: openmpi@4.1.5
+      prefix: /apps/openmpi/4.1.5
+      modules:
+      - openmpi/4.1.5
     buildable: true
   mpi:
     buildable: false
@@ -288,6 +300,22 @@ packages:
       prefix: /apps/intel-mpi/2021.7.0
       modules:
       - intel-mpi/2021.7.0
+    - spec: intel-mpi@2021.7.0
+      prefix: /apps/intel-mpi/2021.7.0
+      modules:
+      - intel-mpi/2021.8.0
+    - spec: intel-mpi@2021.8.0
+      prefix: /apps/intel-mpi/2021.7.0
+      modules:
+      - intel-mpi/2021.8.0
+    - spec: intel-mpi@2021.10.0
+      prefix: /apps/intel-mpi/2021.10.0
+      modules:
+      - intel-mpi/2021.10.0
+    - spec: intel-mpi@2021.11.0
+      prefix: /apps/intel-mpi/2021.11.0
+      modules:
+      - intel-mpi/2021.11.0
   intel-mkl:
     externals:
     - spec: intel-mkl@2019.3.199
@@ -355,5 +383,9 @@ packages:
     - spec: "intel-oneapi-mkl@2023.2.0 +cluster mpi_family=openmpi"
       prefix: /apps/intel-ct/2023.2.0
       modules:
-      - intel-mkl/2023.2.0
+      - intel-mkl/2024.0.0
+    - spec: "intel-oneapi-mkl@2024.0.0 +cluster mpi_family=openmpi"
+      prefix: /apps/intel-ct/2024.0.0
+      modules:
+      - intel-mkl/2024.0.0
     buildable: false
