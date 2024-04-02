@@ -132,7 +132,7 @@ actual subdirectories depend on the selected environment.
 
 ## Updating to a new spack version
 
-The way how this repository is set up assumes that no update of spack will take
+The way this repository is set up assumes that no update of spack will take
 place within a given instance. This is to make sure all packages available
 within a given instance are installed with the same version of spack and are
 fully reproducible. This means that, in order to update spack, one needs to
@@ -189,7 +189,7 @@ architectures are allowed to coexist without any clashes. The inclusion of part
 of the spack hash also allows for the same version of a given package to be
 compiled with different options. Note that there is nothing specific to the
 spack environments, as this is not necessary (two environments that require
-exactly the same package build in exactly the same way will share the
+exactly the same package built in exactly the same way will share the
 corresponding installation).
 
 
