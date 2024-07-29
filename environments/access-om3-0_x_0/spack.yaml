@@ -15,11 +15,11 @@ spack:
     - parallelio@2.6.2 build_type=RelWithDebInfo fflags='-qno-opt-dynamic-align -convert
       big_endian -assume byterecl -ftz -traceback -assume realloc_lhs -fp-model source'
       cflags='-qno-opt-dynamic-align -fp-model precise -std=gnu99'
-    - netcdf-c@4.9.2 build_system=cmake build_type=RelWithDebInfo
+    - netcdf-c@4.9.2 build_system=cmake build_type=RelWithDebInfo ^hdf5@develop-1.14
     - netcdf-fortran@4.6.1
-    - fms@2023.02 precision=64 +large_file +deprecated_io ~gfs_phys ~openmp ~quad_precision
+    - fms@2023.02 precision=64 ~gfs_phys ~openmp ~quad_precision
       build_type=RelWithDebInfo
-    - access-om3 +install_libraries
+    - access-om3@69f719964a27e23deae3923d60af01a081cc3fc0=main +install_libraries
   specs:
   - matrix:
     - [$mpis]
