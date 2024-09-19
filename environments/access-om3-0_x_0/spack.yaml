@@ -19,7 +19,7 @@ spack:
     - netcdf-fortran@4.6.1
     - fms@2023.02 precision=64 ~gfs_phys ~openmp ~quad_precision
       build_type=RelWithDebInfo
-    - access-om3@63ed4a4777aeac0c62720ddbe7f85e4ed16f82eb=main +install_libraries
+    - access-om3@96f91599f746b4866bbd3f05ee6eb192ba70d391=main +install_libraries
   specs:
   - matrix:
     - [$mpis]
