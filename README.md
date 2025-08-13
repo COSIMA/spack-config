@@ -1,3 +1,6 @@
+> [!IMPORTANT]  
+> **This repository has been archived and is read-only. Software that relied on this repo now uses https://github.com/ACCESS-NRI/spack-config**
+
 # COSIMA Spack Configuration
 
 This repository contains the spack configuration and the spack environments used
